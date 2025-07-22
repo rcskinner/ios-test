@@ -60,3 +60,19 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+
+# Xcode user data
+*.xcuserdatad
+*.xcuserdata/
+*.xcscmblueprint
+
+# Xcode workspace data
+*.xcworkspace/xcuserdata/
+*.xcworkspace/xcshareddata/
+
+# Xcode state
+*.xcuserstate
+
+# Ignore user data in workspace
+test-app/test-app.xcodeproj/project.xcworkspace/xcuserdata/
+test-app/test-app.xcodeproj/project.xcworkspace/xcshareddata/
