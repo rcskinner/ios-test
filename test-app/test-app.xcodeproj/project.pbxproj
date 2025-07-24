@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B74C47C82E32A44500DACF0E /* DatadogCore in Frameworks */ = {isa = PBXBuildFile; productRef = B74C47C72E32A44500DACF0E /* DatadogCore */; };
+		B74C47CA2E32A44500DACF0E /* DatadogCrashReporting in Frameworks */ = {isa = PBXBuildFile; productRef = B74C47C92E32A44500DACF0E /* DatadogCrashReporting */; };
+		B74C47CC2E32A44500DACF0E /* DatadogLogs in Frameworks */ = {isa = PBXBuildFile; productRef = B74C47CB2E32A44500DACF0E /* DatadogLogs */; };
+		B74C47CE2E32A44500DACF0E /* DatadogObjc in Frameworks */ = {isa = PBXBuildFile; productRef = B74C47CD2E32A44500DACF0E /* DatadogObjc */; };
+		B74C47D02E32A44500DACF0E /* DatadogRUM in Frameworks */ = {isa = PBXBuildFile; productRef = B74C47CF2E32A44500DACF0E /* DatadogRUM */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		B7F3DD122E30301F00B9C484 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +37,22 @@
 		B7F3DD1B2E30301F00B9C484 /* test-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "test-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B74C47C52E32A35200DACF0E /* Exceptions for "test-app" folder in "test-app" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B7F3DD032E30301D00B9C484 /* test-app */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B7F3DD062E30301D00B9C484 /* test-app */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B74C47C52E32A35200DACF0E /* Exceptions for "test-app" folder in "test-app" target */,
+			);
 			path = "test-app";
 			sourceTree = "<group>";
 		};
@@ -52,6 +73,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B74C47CA2E32A44500DACF0E /* DatadogCrashReporting in Frameworks */,
+				B74C47D02E32A44500DACF0E /* DatadogRUM in Frameworks */,
+				B74C47CE2E32A44500DACF0E /* DatadogObjc in Frameworks */,
+				B74C47CC2E32A44500DACF0E /* DatadogLogs in Frameworks */,
+				B74C47C82E32A44500DACF0E /* DatadogCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +138,11 @@
 			);
 			name = "test-app";
 			packageProductDependencies = (
+				B74C47C72E32A44500DACF0E /* DatadogCore */,
+				B74C47C92E32A44500DACF0E /* DatadogCrashReporting */,
+				B74C47CB2E32A44500DACF0E /* DatadogLogs */,
+				B74C47CD2E32A44500DACF0E /* DatadogObjc */,
+				B74C47CF2E32A44500DACF0E /* DatadogRUM */,
 			);
 			productName = "test-app";
 			productReference = B7F3DD042E30301D00B9C484 /* test-app.app */;
@@ -195,6 +226,9 @@
 			);
 			mainGroup = B7F3DCFB2E30301D00B9C484;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B74C47C62E32A44500DACF0E /* XCRemoteSwiftPackageReference "dd-sdk-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B7F3DD052E30301D00B9C484 /* Products */;
 			projectDirPath = "";
@@ -271,6 +305,8 @@
 /* Begin XCBuildConfiguration section */
 		B7F3DD232E30301F00B9C484 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = B7F3DD062E30301D00B9C484 /* test-app */;
+			baseConfigurationReferenceRelativePath = config/Secrets.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -334,6 +370,8 @@
 		};
 		B7F3DD242E30301F00B9C484 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = B7F3DD062E30301D00B9C484 /* test-app */;
+			baseConfigurationReferenceRelativePath = config/Secrets.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -390,6 +428,8 @@
 		};
 		B7F3DD262E30301F00B9C484 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = B7F3DD062E30301D00B9C484 /* test-app */;
+			baseConfigurationReferenceRelativePath = config/Secrets.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -419,6 +459,8 @@
 		};
 		B7F3DD272E30301F00B9C484 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = B7F3DD062E30301D00B9C484 /* test-app */;
+			baseConfigurationReferenceRelativePath = config/Secrets.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -448,6 +490,8 @@
 		};
 		B7F3DD292E30301F00B9C484 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = B7F3DD062E30301D00B9C484 /* test-app */;
+			baseConfigurationReferenceRelativePath = config/Secrets.xcconfig;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +510,8 @@
 		};
 		B7F3DD2A2E30301F00B9C484 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = B7F3DD062E30301D00B9C484 /* test-app */;
+			baseConfigurationReferenceRelativePath = config/Secrets.xcconfig;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -484,6 +530,8 @@
 		};
 		B7F3DD2C2E30301F00B9C484 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = B7F3DD062E30301D00B9C484 /* test-app */;
+			baseConfigurationReferenceRelativePath = config/Secrets.xcconfig;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -500,6 +548,8 @@
 		};
 		B7F3DD2D2E30301F00B9C484 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = B7F3DD062E30301D00B9C484 /* test-app */;
+			baseConfigurationReferenceRelativePath = config/Secrets.xcconfig;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -554,6 +604,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B74C47C62E32A44500DACF0E /* XCRemoteSwiftPackageReference "dd-sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DataDog/dd-sdk-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.29.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B74C47C72E32A44500DACF0E /* DatadogCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B74C47C62E32A44500DACF0E /* XCRemoteSwiftPackageReference "dd-sdk-ios" */;
+			productName = DatadogCore;
+		};
+		B74C47C92E32A44500DACF0E /* DatadogCrashReporting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B74C47C62E32A44500DACF0E /* XCRemoteSwiftPackageReference "dd-sdk-ios" */;
+			productName = DatadogCrashReporting;
+		};
+		B74C47CB2E32A44500DACF0E /* DatadogLogs */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B74C47C62E32A44500DACF0E /* XCRemoteSwiftPackageReference "dd-sdk-ios" */;
+			productName = DatadogLogs;
+		};
+		B74C47CD2E32A44500DACF0E /* DatadogObjc */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B74C47C62E32A44500DACF0E /* XCRemoteSwiftPackageReference "dd-sdk-ios" */;
+			productName = DatadogObjc;
+		};
+		B74C47CF2E32A44500DACF0E /* DatadogRUM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B74C47C62E32A44500DACF0E /* XCRemoteSwiftPackageReference "dd-sdk-ios" */;
+			productName = DatadogRUM;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B7F3DCFC2E30301D00B9C484 /* Project object */;
 }

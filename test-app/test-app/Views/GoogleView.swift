@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  GoogleView.swift
 //  test-app
 //
 //  Created by Ryan Skinner on 7/22/25.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct GoogleView: View {
     var body: some View {
         NavigationStack {
             VStack {
@@ -39,5 +39,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    GoogleView()
 }
